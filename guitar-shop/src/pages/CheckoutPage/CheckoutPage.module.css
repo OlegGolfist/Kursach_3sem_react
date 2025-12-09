@@ -1,0 +1,131 @@
+.checkoutPage {
+    padding: 40px 0;
+    
+}
+
+.checkoutContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    
+}
+
+.orderSummary, .checkoutForm {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.orderSummary h2, .checkoutForm h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.formGroup input, .formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.formGroup input:focus, .formGroup textarea:focus {
+    border: 3px solid var(--primary-color);
+    outline: none;
+}
+.formGroup textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.checkoutItem {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 3px solid var(--primary-color);
+    
+}
+
+.itemImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.itemInfo {
+    flex: 1;
+}
+
+.itemInfo h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.controls {
+    display: flex;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.controls button {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+}
+
+.removeBtn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.orderTotal {
+    text-align: right;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.submitOrderBtn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .checkoutContainer {
+        grid-template-columns: 1fr;
+    }
+}
+

@@ -1,0 +1,121 @@
+.modalOverlay {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    background-color: var(--white);
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    border: 4px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.cartItemsContainer {
+    overflow-y: auto;
+    max-height: 400px;
+    margin: 20px 0;
+    
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.cartItemImage {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.cartItemInfo {
+    flex: 1;
+}
+
+.cartItemInfo h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.cartItemInfo p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.quantityControls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 8px 0;
+}
+
+.quantityBtn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+}
+
+.quantity {
+    min-width: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.removeFromCart {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #ff5252;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: transform 0.3s;
+}
+
+.cartTotal {
+    text-align: right;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.checkoutBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.checkoutBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
